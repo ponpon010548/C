@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*²Ä¤@ÃD
+/*ç¬¬ä¸€é¡Œ
 int main(){
     int x, y, z, maximum;
-    printf("½Ğ¿é¤J¤T­Ó¼Æ¦r¡G");
+    printf("è«‹è¼¸å…¥ä¸‰å€‹æ•¸å­—ï¼š");
     scanf("%d",&x);
     scanf("%d",&y);
     scanf("%d",&z);
@@ -19,7 +19,7 @@ int main(){
 }
 */
 
-/*²Ä¤GÃD
+/*ç¬¬äºŒé¡Œ
 int main(){
     int count = 0, flag = 0;
 
@@ -46,7 +46,7 @@ int main(){
 }
 */
 
-/*²Ä¤TÃD
+/*ç¬¬ä¸‰é¡Œ
 int main(){
     int count = 0;
     for(int i = 0; i <=9; i++){
@@ -69,12 +69,12 @@ int main(){
 }
 */
 
-/*²Ä¥|ÃD
+/*ç¬¬å››é¡Œ
 int power(int x,int y);
 
 int main(){
     int n = 0, sum = 0;
-    printf("½Ğ¿é¤J¤@­Ó¼Æ¦r¡G");
+    printf("è«‹è¼¸å…¥ä¸€å€‹æ•¸å­—ï¼š");
     scanf("%d",&n);
     for (int i = 0 ; i <= n ; i++){
         sum = power(i,i) + sum;
@@ -94,7 +94,7 @@ int power(int x,int y){
     }
 */
 
-/*²Ä¤­ÃD
+/*ç¬¬äº”é¡Œ
 int main(){
     int j = 1;
     for(int i = 1 ; i <= 9 ; j++){
@@ -110,22 +110,22 @@ int main(){
 }
 */
 
-/*²Ä¤»ÃD
+/*ç¬¬å…­é¡Œ
 int day(int distance);
 int night(int distance);
 int ceiling(int x, int y);
 int main(){
     int x = 0 ;
     float distance = 0;
-    printf("½Ğ¿é¤J¤é¶¡(1)©Î©]¶¡(2)¡G");
+    printf("è«‹è¼¸å…¥æ—¥é–“(1)æˆ–å¤œé–“(2)ï¼š");
     scanf("%d",&x);
-    printf("½Ğ¿é¤J¨½µ{(KM)¡G");
+    printf("è«‹è¼¸å…¥é‡Œç¨‹(KM)ï¼š");
     scanf("%f",&distance);
-    distance = (int)(distance * 1000);
+    distance = distance * 1000;
     if(x==1)
-        printf("¨®¸ê¬°%d¤¸\n",day(distance));
+        printf("è»Šè³‡ç‚º%då…ƒ\n",day(distance));
     else
-        printf("¨®¸ê¬°%d¤¸\n",night(distance));
+        printf("è»Šè³‡ç‚º%då…ƒ\n",night(distance));
 }
 int day(int distance){
     if(distance <= 1500){
@@ -154,23 +154,23 @@ int ceiling(int x, int y){
 }
 */
 
-/*²Ä¤CÃD
+/*ç¬¬ä¸ƒé¡Œ
 void main(){
     int year;
-    printf("¥Á°ê´X¦~¡H");
+    printf("æ°‘åœ‹å¹¾å¹´ï¼Ÿ");
     scanf("%d",&year);
     if ((year + 1911) % 4 == 0)
-        printf("¬O¶|¦~");
+        printf("æ˜¯é–å¹´");
     else
-        printf("¤£¬O¶|¦~");
+        printf("ä¸æ˜¯é–å¹´");
     system("pause");
 }
 */
 
-/*²Ä¤KÃD
+/*ç¬¬å…«é¡Œ
 void main(){
     char alph ;
-    printf("½Ğ¿é¤J­^¤å¦r¥À¡G");
+    printf("è«‹è¼¸å…¥è‹±æ–‡å­—æ¯ï¼š");
     alph = getchar();
     fflush(stdin);
     alph = (int) alph;
@@ -179,28 +179,28 @@ void main(){
     else if(97<= alph && alph <= 122)
         printf("%c\n", alph - 32);
     else
-        printf("±z©Ò¿é¤Jªº¨Ã¤£¬O­^¤å¦r¥À");
+        printf("æ‚¨æ‰€è¼¸å…¥çš„ä¸¦ä¸æ˜¯è‹±æ–‡å­—æ¯");
     system("pause");
 }
 */
 
-/*²Ä¤EÃD
+/*ç¬¬ä¹é¡Œ
 void main(){
     int x, y, z = 0;
-    printf("½Ğ¿é¤J¤TÃäªø\n");
+    printf("è«‹è¼¸å…¥ä¸‰é‚Šé•·\n");
     scanf("%d%d%d",&x,&y,&z);
     if(abs(x - y) < z && (x + y) > z)
-        printf("¥i¥H§Î¦¨¤T¨¤§Î\n");
+        printf("å¯ä»¥å½¢æˆä¸‰è§’å½¢\n");
     else
-        printf("¤£¯à§Î¦¨¤T¨¤§Î\n");
+        printf("ä¸èƒ½å½¢æˆä¸‰è§’å½¢\n");
     system("pause");
 }
 */
 
-/*²Ä¤QÃD
+/*ç¬¬åé¡Œ
 int main(){
     int x, y, z, maximum, small_1, small_2;
-    printf("½Ğ¿é¤J¤TÃäªø¡G\n");
+    printf("è«‹è¼¸å…¥ä¸‰é‚Šé•·ï¼š\n");
     scanf("%d",&x);
     scanf("%d",&y);
     scanf("%d",&z);
@@ -222,33 +222,33 @@ int main(){
     else
         small_2 = z;
     if(maximum * maximum == (small_1 * small_1 + small_2 * small_2))
-        printf("¥i¥H§Î¦¨ª½¨¤¤T¨¤§Î\n");
+        printf("å¯ä»¥å½¢æˆç›´è§’ä¸‰è§’å½¢\n");
     else
-        printf("¤£¯à§Î¦¨ª½¨¤¤T¨¤§Î\n");
+        printf("ä¸èƒ½å½¢æˆç›´è§’ä¸‰è§’å½¢\n");
     system("pause");
     return 0;
 }
 */
 
-/*²Ä¤Q¤@ÃD
+/*ç¬¬åä¸€é¡Œ
 int power(int x,int y);
 void main(){
     int x, y = 0 ;
-    printf("½Ğ¿é¤J¨â­Ó¥¿¾ã¼Æ\n");
+    printf("è«‹è¼¸å…¥å…©å€‹æ­£æ•´æ•¸\n");
     printf("x = ");
     scanf("%d",&x);
     printf("y = ");
     scanf("%d",&y);
     while(y < 0){
-        printf("½Ğ¿é¤J¥¿¾ã¼Æ\n");
+        printf("è«‹è¼¸å…¥æ­£æ•´æ•¸\n");
         printf("y = ");
         scanf("%d",&y);
     }
     if(x == 0 && y == 0){
-        printf("0ªº0¦¸¤èµL©w¸q¡C\n");
+        printf("0çš„0æ¬¡æ–¹ç„¡å®šç¾©ã€‚\n");
     }
     else{
-        printf("%dªº%d¦¸¤è = %d\n", x, y, power(x,y));
+        printf("%dçš„%dæ¬¡æ–¹ = %d\n", x, y, power(x,y));
     }
 }
 
@@ -261,11 +261,11 @@ int power(int x,int y){
     }
 */
 
-/*²Ä¤Q¤GÃD
+/*ç¬¬åäºŒé¡Œ
 void main(){
     int m = 0,factorial = 1, sum = 0;
     while(m <= 0 || m >= 10){
-    printf("½Ğ¿é¤J¤@­Ó¼Æ¦r m (0 < m < 10), m = ");
+    printf("è«‹è¼¸å…¥ä¸€å€‹æ•¸å­— m (0 < m < 10), m = ");
     scanf("%d", &m);
     }
     for(int i = 1 ; i <= m ; i++){
@@ -280,7 +280,7 @@ void main(){
 }
 */
 
-/*²Ä¤Q¤TÃD
+/*ç¬¬åä¸‰é¡Œ
 void main(){
     char Input_char;
     printf("Game over...\n");
@@ -294,39 +294,39 @@ void main(){
 }
 */
 
-/*²Ä¤Q¥|ÃD
+/*ç¬¬åå››é¡Œ
 void main(){
     int price = 0, money = -1, charge = 0;
-    printf("½Ğ¿é¤JÁÊ²¼ª÷ÃB¡G");
+    printf("è«‹è¼¸å…¥è³¼ç¥¨é‡‘é¡ï¼š");
     scanf("%d", &price);
     while(money < price){
-    printf("½Ğ¿é¤J¥I¥Xª÷ÃB(¶È±µ¨ü100ªº­¿¼Æ)¡G");
+    printf("è«‹è¼¸å…¥ä»˜å‡ºé‡‘é¡(åƒ…æ¥å—100çš„å€æ•¸)ï¼š");
     scanf("%d", &money);
     }
     charge = money - price;
     if(charge >= 50){
-        printf("§ä%d­Ó50¤¸\n",charge / 50);
+        printf("æ‰¾%då€‹50å…ƒ\n",charge / 50);
         charge = charge - 50 * (charge / 50);
     }
     if (charge >= 10){
-        printf("§ä%d­Ó10¤¸\n",charge / 10);
+        printf("æ‰¾%då€‹10å…ƒ\n",charge / 10);
         charge = charge - 10 * (charge / 10);
     }
     if(charge>= 5){
-        printf("§ä%d­Ó5¤¸\n",charge / 5);
+        printf("æ‰¾%då€‹5å…ƒ\n",charge / 5);
         charge = charge - 5 * (charge / 5);
     }
     if(charge> 0)
-        printf("§ä%d­Ó1¤¸\n",charge);
+        printf("æ‰¾%då€‹1å…ƒ\n",charge);
     system("pause");
 }
 */
 
-/*²Ä¤Q¤­ÃD
+/*ç¬¬åäº”é¡Œ
 void main(){
     int x, y, gcd;
-    printf("¿é¤Jx:"); scanf("%d",&x);
-    printf("¿é¤Jy:"); scanf("%d",&y);
+    printf("è¼¸å…¥x:"); scanf("%d",&x);
+    printf("è¼¸å…¥y:"); scanf("%d",&y);
     printf("gcd(%d,%d) = ",x ,y);
     if (x < y){
         y = x^y;
